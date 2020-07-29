@@ -12,6 +12,8 @@ This runs the linkchecker from filiph/linkcheck
 
 ## Example usage
 
-uses: actions/linkcheck@v1
-with:
-arguments: ':3000'
+```
+uses: wunderundfitzig/linkcheck-action@v1
+  with:
+  arguments: ':3000'
+```
