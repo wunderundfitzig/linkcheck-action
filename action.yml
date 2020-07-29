@@ -1,4 +1,4 @@
-name: "linkcheck"
+name: "linkcheck-action"
 description: "Check links with filiph/linkcheck"
 inputs:
   arguments: # id of input
