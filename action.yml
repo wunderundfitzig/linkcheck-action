@@ -8,4 +8,4 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  entrypoint: "[/root/.pub-cache/bin/linkcheck, $INPUT_URL]"
+  entrypoint: '["/root/.pub-cache/bin/linkcheck"]'
