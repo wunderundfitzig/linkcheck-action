@@ -1,1 +1,0 @@
-linkcheck $INPUT_URL
