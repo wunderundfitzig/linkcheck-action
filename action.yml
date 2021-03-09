@@ -9,4 +9,5 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.arguments }}
+    - ${{ inputs.url }}
+    - --skip-file ${{ inputs.skip-file }}
