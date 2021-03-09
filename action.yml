@@ -1,11 +1,17 @@
 name: "linkcheck-action"
 description: "Check links with filiph/linkcheck"
 inputs:
-  arguments: # id of input
-    description: "Pass the linkchek arguments"
+  url: # id of input
+    description: "The url or port of the site to check"
+    required: true
+  skip-file: # id of input
+    description: "A file with routes to skip"
     required: true
 
 runs:
   using: "docker"
   image: "Dockerfile"
-  entrypoint: "/root/.pub-cache/bin/linkcheck https://fix-linkchack-takes-to-long.feature.ems.press"
+  args:
+    - ${{ inputs.url }}
+    - --skip-file
+    - ${{ inputs.skip-file }}
