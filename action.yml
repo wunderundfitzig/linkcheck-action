@@ -8,7 +8,4 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.url }}
-    - ${{ inputs.skip-file && '--skip-file' }}
-    - ${{ inputs.skip-file && inputs.skip-file }}
+  entrypoint: entrypoint.sh
