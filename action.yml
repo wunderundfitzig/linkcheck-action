@@ -10,5 +10,5 @@ runs:
   image: "Dockerfile"
   args:
     - ${{ inputs.url }}
-    - --skip-file
-    - ${{ inputs.skip-file }}
+    - ${{ inputs.skip-file && '--skip-file' }}
+    - ${{ inputs.skip-file && inputs.skip-file }}
