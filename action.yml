@@ -8,4 +8,4 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  entrypoint: '["/root/.pub-cache/bin/linkcheck"]'
+  entrypoint: "/root/.pub-cache/bin/linkcheck https://fix-linkchack-takes-to-long.feature.ems.press"
