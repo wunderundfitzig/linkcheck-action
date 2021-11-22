@@ -1,17 +1,12 @@
 name: "linkcheck-action"
 description: "Check links with filiph/linkcheck"
 inputs:
-  url: # id of input
-    description: "The url or port of the site to check"
-    required: true
-  skip-file: # id of input
-    description: "A file with routes to skip"
+  arguments:
+    description: 'The arguments you would pass to the linkcheck tool'
     required: true
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
-  args:
-    - ${{ inputs.url }}
-    - --skip-file
-    - ${{ inputs.skip-file }}
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint:
+    ['sh', '-c', '/root/.pub-cache/bin/linkcheck ${{ inputs.arguments }}']
