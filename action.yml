@@ -10,4 +10,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.arguments }}
-  entrypoint: 'sh -c /root/.pub-cache/bin/linkcheck $*'
+  entrypoint: '/root/.pub-cache/bin/linkcheck $*'
