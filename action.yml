@@ -1,12 +1,16 @@
 name: "linkcheck-action"
 description: "Check links with filiph/linkcheck"
 inputs:
+  external:
+    required: false
+    default: false
   arguments:
-    description: 'The arguments you would pass to the linkcheck tool'
+    description: "The arguments you would pass to the linkcheck tool"
     required: true
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - ${{ inputs.arguments }}
+    - ${{ inputs.external }}
