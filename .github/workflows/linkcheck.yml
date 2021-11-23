@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Linkcheck
         id: linkcheck
-        uses: errnesto/linkcheck@191c022fec3de2ec76b79c417d99660297e0d22d
+        uses: errnesto/linkcheck@ff386c251c9aebac3051212e7d2408bbcf686a17
         with:
           arguments: https://wunderundfitzig.de/skills -e --skip-file linkcheck-skip-file.txt -d
