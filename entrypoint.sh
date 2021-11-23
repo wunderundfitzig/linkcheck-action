@@ -6,7 +6,7 @@ if [ -n "$INPUT_CHECKEXTERNALLINKS" ]; then
 fi
 
 if [ -n "$INPUT_SKIPFILE" ]; then
-    export SKIP_FILE="--skip-file $INPUT_SKIP_FILE"
+    export SKIP_FILE="--skip-file $INPUT_SKIPFILE"
 fi
 
 # OUTPUT = "$INPUT_URL $E $SKIP_FILE"
