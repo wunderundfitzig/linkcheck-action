@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "echo $*"
+sh -c "/root/.pub-cache/bin/linkcheck $*"
