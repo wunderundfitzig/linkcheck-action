@@ -1,12 +1,8 @@
 name: "linkcheck-action"
 description: "Check links with filiph/linkcheck"
 inputs:
-  url:
+  arguments:
     required: true
-  skipFile:
-    required: false
-  checkExternalLinks:
-    required: false
 
 runs:
   using: "docker"

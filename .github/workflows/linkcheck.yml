@@ -12,17 +12,4 @@ jobs:
         id: linkcheck
         uses: ./
         with:
-          url: https://wunderundfitzig.de/skills
-          skipFile: linkcheck-skip-file.txt
-          checkExternalLinks: true
-
-  linkcheck-2:
-    runs-on: ubuntu-latest
-    name: check links without options
-    steps:
-      - uses: actions/checkout@v2
-      - name: Linkcheck
-        id: linkcheck
-        uses: ./
-        with:
-          url: https://wunderundfitzig.de/skills
+          arguments: https://wunderundfitzig.de/skills -e --skip-file linkcheck-skip-file.txt
