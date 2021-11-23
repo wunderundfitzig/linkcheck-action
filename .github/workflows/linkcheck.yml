@@ -18,7 +18,7 @@ jobs:
 
   linkcheck-2:
     runs-on: ubuntu-latest
-    name: check links
+    name: check links without options
     steps:
       - uses: actions/checkout@v2
       - name: Linkcheck
