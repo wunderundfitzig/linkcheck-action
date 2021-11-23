@@ -13,8 +13,8 @@ jobs:
         uses: ./
         with:
           url: https://wunderundfitzig.de/skills
-          skip-file: linkcheck-skip-file.txt
-          check-external-links: true
+          skipFile: linkcheck-skip-file.txt
+          checkExternalLinks: true
 
   linkcheck-2:
     runs-on: ubuntu-latest
