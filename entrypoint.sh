@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-if [ -n "$INPUT_CHECK_EXTERNAL_LINKS" ]; then
+if [ -n "$INPUT_CHECKEXTERNALLINKS" ]; then
     export $E = "-e"
 fi
 
