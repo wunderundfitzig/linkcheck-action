@@ -3,9 +3,9 @@ description: "Check links with filiph/linkcheck"
 inputs:
   url:
     required: true
-  skip-file:
+  skipFile:
     required: false
-  check-external-links:
+  checkExternalLinks:
     required: false
 
 runs:
