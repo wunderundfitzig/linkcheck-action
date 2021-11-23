@@ -10,4 +10,4 @@ if [ -n "$INPUT_SKIPFILE" ]; then
 fi
 
 # OUTPUT = "$INPUT_URL $E $SKIP_FILE"
-sh -c "echo $INPUT_URL $E"
+sh -c "echo $INPUT_URL $E $SKIP_FILE"
