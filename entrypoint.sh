@@ -9,4 +9,4 @@ if [ -n "$INPUT_SKIP_FILE" ]; then
     export $SKIP_FILE = "--skip-file $INPUT_SKIP_FILE"
 fi
 
-sh -c "/root/.pub-cache/bin/linkcheck $INPUT_URL $E $SKIP_FILE"
+sh -c "echo $INPUT_URL $E $SKIP_FILE"
