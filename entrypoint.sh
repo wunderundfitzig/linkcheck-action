@@ -8,5 +8,5 @@ fi
 if [ -n "$INPUT_SKIP_FILE" ]; then
     export $SKIP_FILE = "--skip-file $INPUT_SKIP_FILE"
 fi
-
-sh -c "echo $INPUT_URL $E $SKIP_FILE"
+export HH = "$INPUT_URL $E $SKIP_FILE"
+sh -c "echo $HH"
