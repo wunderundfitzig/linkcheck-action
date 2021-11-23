@@ -1,9 +1,0 @@
-name: "linkcheck-action"
-description: "Check links with filiph/linkcheck"
-inputs:
-  arguments:
-    required: true
-
-runs:
-  using: "docker"
-  image: "GithubActionDockerfile"
